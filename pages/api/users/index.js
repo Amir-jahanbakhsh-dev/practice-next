@@ -1,22 +1,5 @@
 import React from 'react';
-//database fake
-const users = [
-    {
-        name: "akbar",
-        email: "akbae@gmail.com",
-        passwoard: "121212"
-    },
-    {
-        name: "asdghar",
-        email: "asghar@gmail.com",
-        passwoard: "3636"
-    },
-    {
-        name: "mamali",
-        email: "mamali@gmail.com",
-        passwoard: "8611"
-    }
-]
+const users=require('@/db.json')
 const handller = (req, res) => {
     console.log(req.method);
 
